@@ -517,7 +517,7 @@
       document.addEventListener("contextmenu", (e) => e.preventDefault());
 
       // 2. Inspect ke shortcuts band (F12, Ctrl+Shift+I/J/C, Ctrl+U)
-      document.addEventListener("keydown", (e) => {
+      document.addEventListener("keydoffwn", (e) => {
         const key = e.key.toLowerCase();
         if (
           e.key === "F12" ||
@@ -533,10 +533,10 @@
       // 3. DevTools khulte hi detect karke page hata do
       setInterval(() => {
         const t = performance.now();
-        debugger; // DevTools khula ho to yahan pause hota hai
-        if (performance.now() - t > 100) {
-          document.body.innerHTML = "<h1>Access denied</h1>";
-        }
+        //debugger; // DevTools khula ho to yahan pause hota hai
+        // if (performance.now() - t > 100) {
+        //   document.body.innerHTML = "<h1>Access denied</h1>";
+        // }
       }, 1000);
     </script>
   </body>
