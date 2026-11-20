@@ -540,17 +540,7 @@
         if (performance.now() - t > 100) {
           document.body.innerHTML = "<h1>Access denied</h1>";
         }
-
-        document.querySelectorAll('iframe').forEach(frame => {
-    if (
-        frame.id.includes('badge') ||
-        frame.title.includes('Netlify')
-    ) {
-        frame.remove();
-        console.log('Netlify iframe removed:', frame.id);
-    }
-});
-
+        
       }, 1000);
       
     </script>
